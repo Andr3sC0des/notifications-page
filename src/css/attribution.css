@@ -1,0 +1,60 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+.flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 300px;
+  height: 0px;
+  background: #2e2e2e;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: 1s;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.flag__button {
+  width: 40px;
+  height: 25px;
+  background: #2e2e2e;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.flag__button > span {
+  align-self: center;
+  font-size: 20px;
+}
+.flag__attribution {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.flag__attribution > a {
+  color: #00db6e;
+}
+.flag__attribution > a:visited {
+  color: #03f1f1;
+}
+.flag__check:checked ~ .flag {
+  pointer-events: auto;
+  height: 70px;
+  opacity: 1;
+  transition: height 1s;
+}
+.flag__check {
+    display: none;
+}
