@@ -13,6 +13,7 @@
 - Javascript
 - React
 - Tailwind
+- Vite
 
 ---
 ## Links
